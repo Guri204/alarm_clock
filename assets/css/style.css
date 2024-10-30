@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1e1e26;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.clock-container {
+    text-align: center;
+    background-color: #181818;
+    padding: 30px 30px;
+    border-radius: 10px;
+}
+
+#clock {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#setAlarmButton {
+    background-color: #db4f09;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+input[type="number"] {
+    width: 70px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#set-alarm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
