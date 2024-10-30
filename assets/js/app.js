@@ -7,8 +7,8 @@ const setAlarmButton = document.getElementById("setAlarmButton");
 const alarmSound = new Audio('./assets/audio/alarm.mp3');
 alarmSound.type = 'audio/mp3';
 
-let alarmHour = null;
-let alarmMinute = null;
+let alarmHour ;
+let alarmMinute ;
 let alarmSet = false;
 
 function updateClock() {
@@ -32,12 +32,9 @@ function setAlarm() {
         alarmHour = hours;
         alarmMinute = minutes;
         alarmSet = true;
-        let result1 = string(hours).padstart(2, 0);
-        let result2 = string(minutes).padstart(2, 0);
-
-        alarmTimeElement.textContent = {
-            result: `Alarm set to ${result1}:${result2}`
-        };
+        alarmTimeElement.textContent = (
+            `Alarm set to ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`
+        );
     }
 }
 
